@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".v2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="146dp"
+                android:layout_height="119dp"
+                android:src="@drawable/applogo"    />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="'여기여기 붙어라' 가입을 위한 추가 정보를 입력해주세요."/>
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/modify_border"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:enabled="false"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp" >
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/join_border">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/input_year"
+                        android:layout_width="76dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:hint="1992"
+                        android:focusableInTouchMode="false"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="59dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/join_border"                    >
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/input_month"
+                        android:layout_width="59dp"
+                        android:gravity="center"
+                        android:hint="01"
+                        android:focusableInTouchMode="false"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="59dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/join_border"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/input_day"
+                        android:layout_width="59dp"
+                        android:gravity="center"
+                        android:hint="01"
+                        android:focusableInTouchMode="false"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="208dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp" >
+                <LinearLayout
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="9dp"
+                    android:background="@drawable/join_border">
+
+                    <EditText
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:id="@+id/input_phone1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="010"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="9dp"
+                    android:background="@drawable/join_border"                    >
+
+                    <EditText
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:id="@+id/input_phone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:hint="1234"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/join_border">
+
+                    <EditText
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:id="@+id/input_phone3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:hint="5678"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="34dp">
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="141dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="가입"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/finish_btn_push_style"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sopt.android.thunder.manager.SignDetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fcaf17"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="175dp">
+
+        <ImageView android:layout_width="83dp" android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:src="@mipmap/mypage_logo_circle" android:id="@+id/myPicture_sign" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="승인받을가입자이름"
+                android:id="@+id/member_name_sign_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="아이디"
+                android:id="@+id/member_id_sign_detail" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생년월일  " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="전화번호  " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="2015년 10월 30일"
+                android:textSize="16dp"
+                android:id="@+id/member_birthday_sign_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="010-1111-1111"
+                android:id="@+id/member_phoneNum_sign_detail" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="34dp">
+        <Button
+            android:id="@+id/member_sign_cancel_btn"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="12.5dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/modify_cancel_btn_style"/>
+        <Button
+            android:id="@+id/member_sign_finish_btn"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="12.5dp"
+            android:textColor="#ffffff"
+            android:text="가입승인"/>
+
+    </LinearLayout>
+</LinearLayout>

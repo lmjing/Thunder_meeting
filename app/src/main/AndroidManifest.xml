@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sopt.android.thunder" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".component.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- [소속관리를 위한 액티비티 추가 시작] -->
+        <activity android:name=".selectGroupActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".CreateGroupActivity"/>
+        <activity android:name=".MyGroupActivity"/>
+        <!-- end  -->
+
+        <!-- [페이스북 로그인] -->
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="Facebook" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProviderlmjing"
+            android:exported="true" />
+        <!-- end  -->
+
+        <activity
+            android:name=".v3.MainActivity"
+            android:label="@string/app_name_list"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".v3.FacebookLogin"/>
+        <activity android:name=".v3.joinActivity"/>
+        <activity android:name=".v3.EditActivity"/>
+        <activity android:name=".GroupActivity" >
+        </activity>
+        <activity android:name=".v3.Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".v3.ShowActivity" >
+        </activity>
+        <activity android:name=".v3.register.Register"/>
+        <activity android:name=".v3.register.SearchDemoActivity"/>
+
+        <activity android:name=".v3.register.ShowDetailMap" />
+        <activity
+            android:name=".v3.register.WebDialog"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden" android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <!-- 유진이꺼 추가 -->
+        <activity android:name=".manager.ManageActivity" />
+        <activity android:name=".manager.NoticeActivity" />
+        <activity android:name=".manager.GroupInfoActivity" />
+        <activity android:name=".manager.SignActivity" />
+        <activity android:name=".manager.MemberChangeActivity" />
+        <activity android:name=".manager.SignDetailActivity" />
+        <activity android:name=".manager.NoticeRegisterActivity" />
+        <activity android:name=".manager.NoticeShowActivity"></activity>
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener_service] -->
+        <service
+            android:name=".GCM.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener_service] -->
+
+        <!-- [START instanceId_listener_service] -->
+        <service
+            android:name=".GCM.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener_service] -->
+
+        <!-- [START gcm_registration_service] -->
+        <service
+            android:name=".GCM.RegistrationIntentService"
+            android:exported="false">
+
+        </service>
+        <!-- [END gcm_registration_service] -->
+    </application>
+
+</manifest>

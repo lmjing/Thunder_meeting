@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:background="@mipmap/background_list"
+        android:layout_marginTop="12dp"
+        android:layout_height="144dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bowling"
+            android:id="@+id/img_item_2" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="동아리 이름"
+                android:maxLength="14"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/groupname" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="11dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-4px"
+                    android:text=""
+                    android:textColor="#000"
+                    android:id="@+id/groupContents" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="7.5dp"
+            android:textColor="#000"
+            android:id="@+id/groupMaster" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/thunder_bookmark_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="290dp"
+        android:src="@mipmap/main_bookmark_icon"/>
+
+
+    <ImageView
+        android:id="@+id/end_thunder_2"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:background="@mipmap/main_end_alpha"
+        android:visibility="invisible"
+        android:layout_height="144dp"></ImageView>
+</RelativeLayout>

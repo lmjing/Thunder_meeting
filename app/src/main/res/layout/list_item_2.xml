@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:background="@mipmap/background_list"
+        android:layout_marginTop="12dp"
+        android:layout_height="144dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bowling"
+            android:id="@+id/img_item_2" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="솔로삼대장이 여는 솔로파티"
+                android:maxLength="14"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textTitle_item_2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="9dp"
+            android:textSize="22dp"
+            android:textColor="#333333"
+            android:text="D - 1"
+            android:id="@+id/textDday_item_2" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="11dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/location"
+                    android:id="@+id/imageView_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-4px"
+                    android:text="신촌역 3번 출구 앞"
+                    android:textColor="#000"
+                    android:id="@+id/textAddress_item_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/time"
+                    android:id="@+id/imageView2_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="11dp"
+                    android:layout_marginTop="-4px"
+                    android:text="2016년 1월 16일 PM01시"
+                    android:textColor="#000"
+                    android:id="@+id/textDate_item_2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:gravity="center"
+            android:text="작성자: 배지성"
+            android:textSize="7.5dp"
+            android:textColor="#000"
+            android:id="@+id/textName_item_2" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/thunder_bookmark_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="290dp"
+        android:src="@mipmap/main_bookmark_icon"/>
+
+
+    <ImageView
+        android:id="@+id/end_thunder_2"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:background="@mipmap/main_end_alpha"
+        android:visibility="invisible"
+        android:layout_height="144dp"></ImageView>
+</RelativeLayout>

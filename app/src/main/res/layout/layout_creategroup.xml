@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".v3.MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="146dp"
+                    android:layout_height="119dp"
+                    android:src="@drawable/applogo"    />
+
+                <LinearLayout
+                    android:layout_width="208dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/join_border"
+                    android:gravity="center_horizontal|center_vertical">
+
+
+                    <EditText
+                        android:id="@+id/input_groupName"
+                        android:layout_width="200dp"
+                        android:hint="소속 이름"
+                        android:layout_marginLeft="21dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="208dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/join_border"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <EditText
+                        android:id="@+id/input_groupContent"
+                        android:layout_width="190dp"
+                        android:hint="소속 소개 내용"
+                        android:layout_marginLeft="21dp"
+                        android:layout_height="200dp"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="34dp">
+    <Button
+        android:id="@+id/btn_createGroup"
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:text="생성"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/finish_btn_push_style"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

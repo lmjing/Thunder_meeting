@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeebeb"
+    tools:context="com.sopt.android.thunder.manager.NoticeRegisterActivity">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/applogo"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 : " />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/join_border"
+            android:hint="공지사항 제목"
+            android:ems="10"
+            android:id="@+id/notice_register_title" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:background="@drawable/check_notice"
+            android:id="@+id/notice_check_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="내용을 입력하세요"
+            android:background="@drawable/join_border"
+            android:id="@+id/notice_register_context" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:id="@+id/notice_register_cancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록"
+                android:id="@+id/notice_register_finish" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f2f1"
+    tools:context=".manager.ManageActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mypage_logo_circle"
+            android:id="@+id/manage_logo" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:text="SOPT"
+                android:id="@+id/manage_group_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="since 2015.01.31."
+                android:id="@+id/manage_group_start_date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기획팀장 이정연 / 관리자"
+                android:id="@+id/manage_group_manager" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="동아리 관리" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체 회원 수 0명"
+        android:id="@+id/manage_group_allNum" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입 승인 대기자 0명"
+        android:id="@+id/manage_group_sign_wait" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="NOTICE 등록"
+                android:id="@+id/manage_group_register_notice" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="회원 관리"
+                android:id="@+id/manage_group_member_change" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="가입 관리"
+                android:id="@+id/manage_group_sign_all" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="동아리 기본 정보"
+                android:id="@+id/manage_group_info" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
